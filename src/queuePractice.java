@@ -13,11 +13,14 @@ public class queuePractice {
     public static void main(String[] args) {
 
 
+
+
         Queue<String> linkedQueue = new LinkedList();
         linkedQueue.offer("A");
         linkedQueue.add("B"); // if full returns false
         linkedQueue.offer("C");
         linkedQueue.offer("D"); // if full returns false
+
         System.out.println(linkedQueue);
         System.out.println("Peek : " +linkedQueue.peek()); //returns first if not present returns null
         System.out.println("Poll: "+linkedQueue.poll()); // removes and return first element

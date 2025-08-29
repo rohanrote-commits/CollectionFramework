@@ -40,6 +40,8 @@ public class Main {
 
         //remove methods
         arrayList.remove("Three");
+
+        arrayList.set(2,"five");
         System.out.println(arrayList);
         arrayList.addAll(arrayList);
         System.out.println(arrayList);
@@ -59,6 +61,7 @@ public class Main {
         System.out.println(arrayList);
 
         arrayList.add("three");
+
 
         //search method
         System.out.println(arrayList.containsAll(list2));
@@ -89,6 +92,7 @@ public class Main {
         }
         System.out.println(
         );
+
         while (listIterator.hasPrevious()) {
 
 
@@ -129,6 +133,8 @@ public class Main {
             return (student1.age - student2.age);
 
         });
+        Collections.sort(studentList,(s1,s2) -> s1.age - s2.age);
+
         studentList.forEach(student ->
                 System.out.println("Age :" + student.age + " Name : " + student.name)
         );
